@@ -10,7 +10,7 @@ const { userList } = storeToRefs(useUsersStore());
 
 <template>
   <main>
-    <div class="flex flex-wrap">
+    <div class="flex flex-wrap px-2 md:px-4">
       <div class="w-full max-w-full px-3 mb-6 mx-auto">
         <div
           class="relative flex-[1_auto] flex flex-col break-words min-w-0 bg-clip-border rounded-[.95rem] bg-white"
@@ -25,7 +25,7 @@ const { userList } = storeToRefs(useUsersStore());
         </div>
       </div>
     </div>
-    <div class="flex flex-wrap">
+    <div class="flex flex-wrap pb-4 md:pb-7">
       <div class="w-full max-w-full sm:w-3/4 mx-auto text-center">
         <p class="text-sm text-slate-500 py-1">
           <span
