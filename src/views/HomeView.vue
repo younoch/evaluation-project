@@ -11,7 +11,7 @@ const { userList } = storeToRefs(useUsersStore());
 <template>
   <main>
     <div class="flex flex-wrap px-2 md:px-4">
-      <div class="w-full max-w-full px-3 mb-6 mx-auto">
+      <div class="w-full max-w-full md:px-3 mb-6 mx-auto">
         <div
           class="relative flex-[1_auto] flex flex-col break-words min-w-0 bg-clip-border rounded-[.95rem] bg-white"
         >

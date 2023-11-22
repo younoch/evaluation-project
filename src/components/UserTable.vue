@@ -1,16 +1,16 @@
 <template>
   <div>
     <div
-      class="flex-auto block p-4 pt-3 md:py-8 md:pt-6 md:px-4"
+      class="flex-auto block p-2 md:p-4"
     >
       <div class="">
         <table class="w-full my-0 align-middle text-dark border-neutral-200">
           <thead class="align-bottom">
-            <tr class="font-semibold text-[0.95rem] text-secondary-dark">
-              <th class="pb-3 text-start min-w-[175px]">name</th>
-              <th class="pb-3 text-center min-w-[100px]">DOB</th>
-              <th class="pb-3 text-end min-w-[100px]">Joining Date</th>
-              <th class="pb-3 text-end min-w-[50px]">Actions</th>
+            <tr class="font-semibold text-sm md:text-base text-secondary-dark">
+              <th class="pb-3 text-start  ">Name</th>
+              <th class="pb-3 text-center ">DOB</th>
+              <th class="pb-3 md:text-end text-center ">Joining Date</th>
+              <th class="pb-3 text-end ">Actions</th>
             </tr>
           </thead>
           <tbody>
@@ -23,18 +23,18 @@
               @dragover="dropElement($event, index)"
             >
               <template v-if="item">
-                <td class="p-3">
+                <td class="p-1 md:p-3">
                   <div class="flex items-center">
                     <div class="inline-block shrink-0 rounded-2xl me-3">
                       <img
                         src="https://raw.githubusercontent.com/Loopple/loopple-public-assets/main/riva-dashboard-tailwind/img/img-49-new.jpg"
-                        class="w-[50px] h-[50px] inline-block shrink-0 rounded-2xl"
+                        class="w-8 h-8 md:w-[50px] md:h-[50px] inline-block shrink-0 md:rounded-2xl rounded-lg"
                         alt=""
                       />
                     </div>
                     <div class="flex flex-col justify-start">
                       <p
-                        class="mb-1 font-semibold transition-colors duration-200 ease-in-out text-md/normal text-secondary-inverse hover:text-primary"
+                        class="mb-1 font-semibold transition-colors duration-200 ease-in-out text-sm/normal md:text-md/normal text-secondary-inverse hover:text-primary"
                       >
                         {{ item.name }}
                       </p>
@@ -42,21 +42,21 @@
                   </div>
                 </td>
                 <td class="pr-0 text-center">
-                  <span class="font-semibold text-light-inverse text-md/normal">
+                  <span class="font-semibold text-light-inverse text-sm/normal md:text-md/normal">
                     {{ item.dob }}</span
                   >
                 </td>
                 <td class="pr-0 text-end">
                   <span
-                    class="font-semibold text-light-inverse text-md/normal"
+                    class="font-semibold text-light-inverse text-sm/normal md:text-md/normal"
                     >{{ item.joinDate }}</span
                   >
                 </td>
-                <td class="p-3 text-end">
+                <td class="p-1 md:p-3 text-end">
                   <div class="inline-block text-left dropdown">
                     <span class="rounded-md shadow-sm"
                       ><button
-                        class="inline-flex justify-center w-full p-2 text-sm font-medium leading-5 text-gray-700 transition duration-150 ease-in-out bg-white border border-gray-300 rounded-md hover:text-gray-500 focus:outline-none focus:border-blue-300 focus:shadow-outline-blue active:bg-gray-50 active:text-gray-800"
+                        class="inline-flex justify-center w-full p-1 md:p-2 text-sm font-medium leading-5 text-gray-700 transition duration-150 ease-in-out bg-white border border-gray-300 rounded-md hover:text-gray-500 focus:outline-none focus:border-blue-300 focus:shadow-outline-blue active:bg-gray-50 active:text-gray-800"
                         type="button"
                         aria-haspopup="true"
                         aria-expanded="true"
